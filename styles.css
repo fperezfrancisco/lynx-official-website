@@ -758,6 +758,125 @@ body {
 
 /***  OUR WORK PAGE STYLING HERE ***/
 
+.ourWorkCopy {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientWorkSection {
+  position: relative;
+  width: 100%;
+  padding: 2rem 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1.5rem;
+  justify-items: center;
+}
+
+.clientWorkBox {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.clientWorkBox:hover {
+  transform: scale(1.125);
+  transition: all 0.5s ease-out;
+}
+
+.thumbnailContainer {
+  width: 100%;
+  height: 60%;
+  background-color: var(--tempGray);
+  margin-bottom: 0.75rem;
+}
+
+.clientTextBox {
+  width: 100%;
+  padding: 0.5rem 0rem;
+  text-align: left;
+}
+
+.clientName {
+  font-size: 1.25rem;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0rem 0rem 0rem;
+  line-height: 1.2;
+}
+
+.seeMore {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+/* pop up section */
+.popUpContainer {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  width: 90%;
+  max-width: 800px;
+  left: 0;
+  right: 0;
+  top: 5%;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-dark-900);
+}
+
+.innerPopUp {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+  row-gap: 1rem;
+  align-items: center;
+}
+
+.innerPopUp .thumbnailContainer {
+  width: 500px;
+  height: 325px;
+}
+
+.innerPopUp .imgSlider {
+  width: 600px;
+  height: 400px;
+  background-color: var(--tempGray);
+}
+
+.controlsBox {
+  margin-top: 1.5rem;
+  column-gap: 24px;
+  color: var(--white-400);
+  font-size: 3rem;
+}
+
+.backBtn {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  border: none;
+  background-color: var(--tempGray);
+  color: var(--white-400);
+  box-shadow: none;
+}
+
+.controlsBox i {
+  cursor: pointer;
+}
+
 /***  CONTACT PAGE STYLING HERE ***/
 
 .contactSection {
@@ -1026,6 +1145,8 @@ body {
     grid-column: 1 / 3;
     margin-bottom: 3rem;
   }
+
+  /* our work */
 }
 
 @media only screen and (min-width: 600px) {
@@ -1056,6 +1177,24 @@ body {
 
   .teamBox {
     padding: 2rem;
+  }
+
+  /***  OUR WORK PAGE STYLING HERE ***/
+
+  .clientWorkSection {
+    width: 100%;
+    padding: 0rem 1rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 1.5rem;
+  }
+
+  .clientWorkBox {
+    width: 400px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .clientName {
+    font-size: 2rem;
   }
 }
 
@@ -1313,6 +1452,20 @@ body {
   .contactSection {
     width: 100%;
     padding: 9rem 6rem;
+  }
+
+  /***  OUR WORK PAGE STYLING HERE ***/
+
+  .clientWorkSection {
+    width: 100%;
+    padding: 2rem 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    justify-items: center;
+  }
+
+  .clientWorkBox {
+    width: 500px;
+    aspect-ratio: 1 / 1;
   }
 }
 

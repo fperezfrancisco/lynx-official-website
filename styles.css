@@ -695,13 +695,18 @@ body {
 
 /***  OUR TEAM PAGE STYLING HERE ***/
 
+.teamPageBody .ourWorkHeroArtContainer {
+  background-image: none;
+  width: fit-content;
+}
+
 .meetTeamSection {
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   align-items: center;
   justify-items: center;
   column-gap: 2rem;
-  row-gap: 8rem;
-  padding: 10rem 1rem 4rem;
+  row-gap: 10rem;
+  padding: 10rem 0rem;
   background-image: linear-gradient(rgba(8, 52, 11, 1), rgba(18, 22, 18, 0));
 }
 
@@ -716,7 +721,7 @@ body {
   max-width: 550px;
   height: 100%;
   min-height: 400px;
-  padding: 2rem;
+  padding: 1rem;
   background-color: #3b9642;
   color: var(--white-400);
   flex-direction: column;
@@ -726,10 +731,10 @@ body {
 
 .headshotContainer {
   position: absolute;
-  top: -10%;
+  top: -60px;
   z-index: 2;
-  width: 75%;
-  height: fit-content;
+  width: 85%;
+  height: auto;
   overflow: hidden;
 }
 
@@ -745,7 +750,7 @@ body {
 }
 
 .teamMemberName {
-  margin-top: 40%;
+  margin-top: 60%;
   margin-bottom: 2rem;
   font-size: 2rem;
   text-transform: uppercase;
@@ -973,6 +978,18 @@ body {
     padding: 4rem 2rem 1rem;
   }
 
+  /***  meet team PAGE STYLING HERE ***/
+
+  .meetTeamSection {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    align-items: center;
+    justify-items: center;
+    column-gap: 2rem;
+    row-gap: 10rem;
+    padding: 10rem 0rem;
+    background-image: linear-gradient(rgba(8, 52, 11, 1), rgba(18, 22, 18, 0));
+  }
+
   /***  CONTACT PAGE STYLING HERE ***/
 
   .contactSection {
@@ -1033,8 +1050,12 @@ body {
     align-items: center;
     justify-items: center;
     column-gap: 2rem;
-    row-gap: 4rem;
+    row-gap: 10rem;
     padding: 6rem 1rem;
+  }
+
+  .teamBox {
+    padding: 2rem;
   }
 }
 
@@ -1093,6 +1114,34 @@ body {
   .contactForm {
     max-width: 600px;
     min-width: 200px;
+  }
+
+  .headshotContainer {
+    position: absolute;
+    top: -50px;
+    z-index: 2;
+    width: 75%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  /* our team */
+  .teamMemberBioCopy {
+    width: 100%;
+    text-align: left;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .teamMemberName {
+    margin-top: 16rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
   }
 }
 
@@ -1257,7 +1306,7 @@ body {
     align-items: center;
     justify-items: center;
     column-gap: 2rem;
-    row-gap: 4rem;
+    row-gap: 10rem;
     padding: 6rem 1rem;
   }
 

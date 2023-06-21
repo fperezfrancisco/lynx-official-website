@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- FONTS LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOX ICONS LINK -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- TITLE AND META DATA -->
+    <title>Contact Us At Lynx Digital Media</title>
+  </head>
+  <body class="bodyContainer contactPageBody">
+    <header class="mainHeader contactPageHeader flex">
+      <nav class="mainNavBar flex">
+        <span class="logoContainer">
+          <a href="index.html" class="logoLink">
+            <img
+              src="images/lynx-logo-copy.png"
+              class="logoImg"
+              alt="Lynx Logo"
+              title="Lynx Home"
+            />
+          </a>
+        </span>
+        <ul class="navList flex topNavList">
+          <li class="navItem flex">
+            <a href="services.html" class="navLink" id="servicesLink"
+              >services</a
+            >
+          </li>
+          <li class="navItem flex">
+            <a href="#" class="navLink" id="ourWorkLink">our work</a>
+          </li>
+          <li class="navItem flex">
+            <a href="our-team.html" class="navLink" id="ourTeamLink"
+              >our team</a
+            >
+          </li>
+          <li class="navItem flex contactItem">
+            <button
+              class="contactBtn"
+              id="navContactBtn"
+              onclick="window.location.href='contact-us.html'"
+            >
+              contact
+            </button>
+          </li>
+        </ul>
+        <span class="mobileMenuOpen flex"><i class="bx bx-menu"></i></span>
+        <div class="mobileMenuContainer flex">
+          <div class="mobileMenuClose"><i class="bx bx-x"></i></div>
+          <ul class="navList flex mobileMenuNavList">
+            <li class="navItem flex">
+              <a href="services.html" class="navLink" id="servicesLink"
+                >services</a
+              >
+            </li>
+            <li class="navItem flex">
+              <a href="#" class="navLink" id="ourWorkLink">our work</a>
+            </li>
+            <li class="navItem flex">
+              <a href="our-team.html" class="navLink" id="ourTeamLink"
+                >our team</a
+              >
+            </li>
+            <li class="navItem flex contactItem">
+              <button
+                class="contactBtn"
+                id="navContactBtn"
+                onclick="window.location.href='contact-us.html'"
+              >
+                contact
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="mainSiteContainer grid">
+      <section class="pageSection grid contactSection">
+        <div class="contactCopyContainer flex">
+          <h1 class="pageTitle contactTitle">Contact Us</h1>
+          <p class="sectionPara">
+            Fill out the form and our team will get back to you as soon as
+            possible.
+          </p>
+          <ul class="contactInfoList flex">
+            <li class="contactInfoItem flex">
+              <i class="bx bxs-phone"></i>
+              <p class="listText">xxx.xxx.xxxx</p>
+            </li>
+            <li class="contactInfoItem flex">
+              <i class="bx bxs-envelope"></i>
+              <p class="listText">lynxmediainfo@gmail.com</p>
+            </li>
+            <li class="contactInfoItem flex">
+              <i class="bx bxl-instagram-alt"></i>
+              <p class="listText">@lynxdigitalmedia_</p>
+            </li>
+          </ul>
+        </div>
+        <form class="contactForm grid" id="contactForm">
+          <span class="formItem firstNameSpan flex">
+            <label for="firstName" class="formLabel">First Name</label>
+            <input type="text" name="firstName" id="firstName" required />
+          </span>
+          <span class="formItem lastNameSpan flex">
+            <label for="lastName" class="formLabel">Last Name</label>
+            <input type="text" name="lastName" id="lastName" required />
+          </span>
+          <span class="formItem emailSpan flex">
+            <label for="email" class="formLabel">Email</label>
+            <input type="email" name="email" id="email" required />
+          </span>
+          <span class="formItem messageSpan flex">
+            <label for="message" class="formLabel">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="5"
+              placeholder="Type your message here..."
+              required
+            ></textarea>
+          </span>
+          <button class="formSendBtn" id="sendMessageBtn">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer class="mainFooter">
+      <div class="logoContainerFooter flex">
+        <img
+          src="images/lynx-logo-copy.png"
+          alt="Lynx Digital Logo"
+          title="Lynx Home"
+          class="logoImgFooter"
+        />
+      </div>
+      <div class="footerCopy flex">
+        <form class="subscribeForm flex">
+          <h2 class="subscribeTitle">Subscribe Form</h2>
+          <fieldset>
+            <input
+              type="email"
+              name="yourEmail"
+              id="yourEmail"
+              placeholder="YOUR EMAIL"
+            />
+            <button class="subscribeBtn filledBtn">Join</button>
+          </fieldset>
+        </form>
+        <ul class="footerList footerInfo flex">
+          <li class="footerItem">
+            <p class="listText">xxx.xxx.xxxx</p>
+          </li>
+          <li class="footerItem">
+            <p class="listText">lynxmediainfo@gmail.com</p>
+          </li>
+          <li class="footerItem">
+            <p class="listText">2023 by Lynx Digital Media</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script/contactPage.js"></script>
+    <script src="script/index.js"></script>
+  </body>
+</html>

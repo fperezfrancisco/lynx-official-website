@@ -796,6 +796,20 @@ body {
   background-color: var(--tempGray);
   margin-bottom: 0.75rem;
   cursor: pointer;
+  overflow: hidden;
+}
+
+.thumbnailContainer img {
+  object-fit: cover;
+}
+
+#guanatosThumbnail {
+  height: 100%;
+}
+
+#trilogyThumbnail {
+  height: unset;
+  object-fit: cover;
 }
 
 .clientTextBox {

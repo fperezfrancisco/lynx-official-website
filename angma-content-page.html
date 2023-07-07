@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- FONTS LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOX ICONS LINK -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- TITLE AND META DATA -->
+    <title>Contact Us At Lynx Digital Media</title>
+  </head>
+  <body class="bodyContainer clientPageBody">
+    <header class="mainHeader angmaPageHeader flex">
+      <nav class="mainNavBar flex">
+        <span class="logoContainer">
+          <a href="index.html" class="logoLink">
+            <img
+              src="images/lynx-logo-copy.png"
+              class="logoImg"
+              alt="Lynx Logo"
+              title="Lynx Home"
+            />
+          </a>
+        </span>
+        <ul class="navList flex topNavList">
+          <li class="navItem flex">
+            <a href="services.html" class="navLink" id="servicesLink"
+              >services</a
+            >
+          </li>
+          <li class="navItem flex">
+            <a href="our-work.html" class="navLink" id="ourWorkLink"
+              >our work</a
+            >
+          </li>
+          <li class="navItem flex">
+            <a href="our-team.html" class="navLink" id="ourTeamLink"
+              >our team</a
+            >
+          </li>
+          <li class="navItem flex contactItem">
+            <button
+              class="contactBtn"
+              id="navContactBtn"
+              onclick="window.location.href='contact-us.html'"
+            >
+              contact
+            </button>
+          </li>
+        </ul>
+        <span class="mobileMenuOpen flex"><i class="bx bx-menu"></i></span>
+        <div class="mobileMenuContainer flex">
+          <div class="mobileMenuClose"><i class="bx bx-x"></i></div>
+          <ul class="navList flex mobileMenuNavList">
+            <li class="navItem flex">
+              <a href="services.html" class="navLink" id="servicesLink"
+                >services</a
+              >
+            </li>
+            <li class="navItem flex">
+              <a href="our-work.html" class="navLink" id="ourWorkLink"
+                >our work</a
+              >
+            </li>
+            <li class="navItem flex">
+              <a href="our-team.html" class="navLink" id="ourTeamLink"
+                >our team</a
+              >
+            </li>
+            <li class="navItem flex contactItem">
+              <button
+                class="contactBtn"
+                id="navContactBtn"
+                onclick="window.location.href='contact-us.html'"
+              >
+                contact
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="mainSiteContainer grid">
+      <section class="pageSection flex clientHero">
+        <div class="clientVideoContainer flex"></div>
+        <div class="clientCopyContainer">
+          <h1 class="pageTitle">Angma</h1>
+          <p class="sectionPara">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ut
+            labore maxime harum aspernatur ipsum voluptatum possimus inventore,
+            molestias reiciendis vel eligendi porro quam commodi unde, quos
+            eveniet sapiente nobis.
+          </p>
+          <a href="#" class="instaLink" target="_blank"
+            >Visit our Instagram Page</a
+          >
+        </div>
+      </section>
+      <section class="pageSection content grid">
+        <div class="contentBlock flex"></div>
+        <div class="contentBlock flex"></div>
+        <div class="contentBlock flex"></div>
+      </section>
+    </main>
+    <footer class="mainFooter">
+      <div class="logoContainerFooter flex">
+        <img
+          src="images/lynx-logo-copy.png"
+          alt="Lynx Digital Logo"
+          title="Lynx Home"
+          class="logoImgFooter"
+        />
+      </div>
+      <div class="footerCopy flex">
+        <form class="subscribeForm flex">
+          <h2 class="subscribeTitle">Subscribe Form</h2>
+          <fieldset>
+            <input
+              type="email"
+              name="yourEmail"
+              id="yourEmail"
+              placeholder="YOUR EMAIL"
+            />
+            <button class="subscribeBtn filledBtn">Join</button>
+          </fieldset>
+        </form>
+        <ul class="footerList footerInfo flex">
+          <li class="footerItem">
+            <p class="listText">xxx.xxx.xxxx</p>
+          </li>
+          <li class="footerItem">
+            <p class="listText">lynxmediainfo@gmail.com</p>
+          </li>
+          <li class="footerItem">
+            <p class="listText">2023 by Lynx Digital Media</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script/contactPage.js"></script>
+    <script src="script/index.js"></script>
+  </body>
+</html>

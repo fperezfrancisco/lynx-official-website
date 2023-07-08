@@ -905,16 +905,13 @@ body {
   column-gap: 2rem;
   padding: 1rem 2rem;
   flex-direction: column;
+  align-items: center;
   row-gap: 2rem;
 }
 
 .clientVideoContainer {
-  width: 100%;
-  height: 60%;
-  max-width: 700px;
-  min-width: 400px;
-  max-height: 600px;
-  min-height: 400px;
+  width: 250px;
+  height: 150px;
 
   background-color: var(--tempGray);
 }
@@ -922,16 +919,18 @@ body {
 .clientCopyContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  row-gap: 1rem;
-  max-width: 500px;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
 }
 
 .instaLink {
   font-size: 0.75rem;
-  color: inherit;
+  color: var(--white-400);
+  opacity: 0.8;
   text-decoration: none;
   letter-spacing: 1px;
+  margin-top: 2rem;
 }
 
 .instaLink:hover {
@@ -1224,6 +1223,18 @@ body {
   }
 
   /* our work */
+  /***  CLIENT PAGE STYLING HERE ***/
+
+  .clientVideoContainer {
+    width: 350px;
+    height: 200px;
+
+    background-color: var(--tempGray);
+  }
+
+  .clientCopyContainer {
+    max-width: 400px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -1272,6 +1283,15 @@ body {
 
   .clientName {
     font-size: 2rem;
+  }
+
+  /***  CLIENT PAGE STYLING HERE ***/
+
+  .clientVideoContainer {
+    width: 600px;
+    height: 350px;
+
+    background-color: var(--tempGray);
   }
 }
 
@@ -1438,6 +1458,20 @@ body {
   .clientHero {
     column-gap: 2rem;
     flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .clientVideoContainer {
+    width: 450px;
+    height: 275px;
+
+    background-color: var(--tempGray);
+  }
+
+  .clientCopyContainer {
+    max-width: 400px;
+    text-align: left;
+    align-items: flex-start;
   }
 
   /***  SERVICES PAGE STYLING HERE ***/
@@ -1549,6 +1583,19 @@ body {
   .clientWorkBox {
     width: 500px;
     aspect-ratio: 1 / 1;
+  }
+
+  /***  CLIENT PAGE STYLING HERE ***/
+
+  .clientVideoContainer {
+    width: 600px;
+    height: 350px;
+
+    background-color: var(--tempGray);
+  }
+
+  .clientCopyContainer {
+    max-width: 600px;
   }
 }
 

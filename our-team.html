@@ -39,10 +39,47 @@
               >services</a
             >
           </li>
-          <li class="navItem flex">
+          <li class="navItem flex" id="ourWorkNavItem">
             <a href="our-work.html" class="navLink" id="ourWorkLink"
               >our work</a
             >
+            <div class="workDropDown flex">
+              <ul class="clientsNavList flex">
+                <li class="navItem flex">
+                  <a
+                    href="angma-content-page.html"
+                    class="navLink clientNavLink"
+                    >Angma</a
+                  >
+                </li>
+                <li class="navItem flex">
+                  <a
+                    href="trilogy-content-page.html"
+                    class="navLink clientNavLink"
+                    >Trilogy Soccer</a
+                  >
+                </li>
+                <li class="navItem flex">
+                  <a
+                    href="guanatos-content-page.html"
+                    class="navLink clientNavLink"
+                    >Guanatos tacos</a
+                  >
+                </li>
+                <li class="navItem flex">
+                  <a
+                    href="platinum-content-page.html"
+                    class="navLink clientNavLink"
+                    >Platinum Auto Detailing</a
+                  >
+                </li>
+                <li class="navItem flex">
+                  <a href="our-work.html" class="navLink clientNavLink"
+                    >Bolt Investments</a
+                  >
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="navItem flex">
             <a href="#" class="navLink" id="ourTeamLink">our team</a>
@@ -202,7 +239,12 @@
           Talk to us today so we can help you get started or answer any inquiry
           that you might have.
         </p>
-        <button class="contactBtn hireUsBtn ctaBtn">Talk to us</button>
+        <button
+          class="contactBtn hireUsBtn ctaBtn"
+          onclick="window.location.href='contact-us.html'"
+        >
+          Talk to us
+        </button>
       </section>
     </main>
     <footer class="mainFooter">

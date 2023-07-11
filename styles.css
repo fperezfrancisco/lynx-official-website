@@ -175,6 +175,7 @@ body {
 
 .navItem {
   margin: 0rem 0.5rem;
+  position: relative;
 }
 
 .navLink {
@@ -192,6 +193,33 @@ body {
 
 .navLink:hover {
   color: var(--secondary-green-400);
+}
+
+/* our work drop down menu */
+.workDropDown {
+  display: none;
+  padding: 0.5rem;
+  position: absolute;
+  z-index: 5;
+  background-color: var(--primary-dark-400);
+  margin-top: 1rem;
+}
+
+#ourWorkNavItem:hover .workDropDown,
+.workDropDown:hover .workDropDown {
+  display: flex;
+}
+
+.clientsNavList {
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  row-gap: 0.75rem;
+}
+
+.workDropDown > .clientsNavList > .navLink {
+  font-size: 0.75rem;
+  letter-spacing: 0px;
 }
 
 .contactItem {

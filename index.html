@@ -39,10 +39,47 @@
               >services</a
             >
           </li>
-          <li class="navItem flex">
+          <li class="navItem flex" id="ourWorkNavItem">
             <a href="our-work.html" class="navLink" id="ourWorkLink"
               >our work</a
             >
+            <div class="workDropDown flex">
+              <ul class="clientsNavList flex">
+                <li class="navItem flex">
+                  <a
+                    href="angma-content-page.html"
+                    class="navLink clientNavLink"
+                    >Angma</a
+                  >
+                </li>
+                <li class="navItem flex">
+                  <a
+                    href="trilogy-content-page.html"
+                    class="navLink clientNavLink"
+                    >Trilogy Soccer</a
+                  >
+                </li>
+                <li class="navItem flex">
+                  <a
+                    href="guanatos-content-page.html"
+                    class="navLink clientNavLink"
+                    >Guanatos tacos</a
+                  >
+                </li>
+                <li class="navItem flex">
+                  <a
+                    href="platinum-content-page.html"
+                    class="navLink clientNavLink"
+                    >Platinum Auto Detailing</a
+                  >
+                </li>
+                <li class="navItem flex">
+                  <a href="our-work.html" class="navLink clientNavLink"
+                    >Bolt Investments</a
+                  >
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="navItem flex">
             <a href="our-team.html" class="navLink" id="ourTeamLink"
@@ -97,7 +134,12 @@
           <h1 class="pageTitle heroTitle">
             Unlock your digital potential with Lynx
           </h1>
-          <button class="filledBtn contactBtn heroBtn">Connect with us!</button>
+          <button
+            class="filledBtn contactBtn heroBtn"
+            onclick="window.location.href='contact-us.html'"
+          >
+            Connect with us!
+          </button>
         </div>
         <div class="heroArtContainer flex">
           <!--
@@ -208,7 +250,12 @@
             delivering outstanding results, crafting marketing campaigns that
             embody the genuine essence of your brand.
           </p>
-          <button class="aboutBtn">Our team</button>
+          <button
+            class="aboutBtn"
+            onclick="window.location.href='our-team.html'"
+          >
+            Our team
+          </button>
         </div>
         <div class="aboutArtContainer sectionArtContainer flex">
           <img src="images/stock-about-us-img.jpeg" alt="" class="sectionImg" />
@@ -227,7 +274,12 @@
               <li class="servicesItem">content creation</li>
               <li class="servicesItem">lynx master class</li>
             </ul>
-            <button class="learnMoreBtn servicesBtn">Learn more</button>
+            <button
+              class="learnMoreBtn servicesBtn"
+              onclick="window.location.href='services.html'"
+            >
+              Learn more
+            </button>
           </div>
           <div class="aboutArtContainer sectionArtContainer flex">
             <img src="images/stock-services.jpeg" alt="" class="sectionImg" />
@@ -239,7 +291,12 @@
             Let us help you grow your business today. Get in touch with us to
             see how we can help you get started!
           </p>
-          <button class="contactBtn hireUsBtn ctaBtn">Hire us</button>
+          <button
+            class="contactBtn hireUsBtn ctaBtn"
+            onclick="window.location.href='contact-us.html'"
+          >
+            Hire us
+          </button>
         </section>
       </div>
     </main>

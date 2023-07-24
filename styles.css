@@ -129,9 +129,13 @@ body {
   height: 100%;
   background-color: var(--primary-dark-400);
   color: var(--white-400);
+  padding-top: 120px;
 }
 
 .mainHeader {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
   padding: 1rem;
   width: 100%;
   min-height: 100px;
@@ -144,6 +148,10 @@ body {
   height: 100%;
   width: 100%;
   font-size: 0.75rem;
+}
+
+header.scrolling {
+  background-color: rgba(0, 0, 0, 0.95);
 }
 
 .logoContainer {

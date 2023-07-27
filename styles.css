@@ -837,21 +837,29 @@ header.scrolling {
 
 .thumbnailContainer img {
   object-fit: cover;
+
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
 }
 
 #guanatosThumbnail {
   width: 100%;
   height: 60%;
   object-fit: cover;
-  background-image: url("clientFolders/guanatos/guanatos-grill-shot-small.jpg");
+  background-image: url("clientFolders/guanatos/guanatos-smallest.jpg");
   background-size: cover;
+}
+
+#guanatosThumbnailImg {
+  object-fit: cover;
+  height: 100%;
 }
 
 #trilogyThumbnail {
   width: 100%;
-  height: 60%;
   object-fit: cover;
-  background-image: url("clientFolders/trilogy-soccer/trilogy-coach-shot-small.jpg");
+  object-position: center;
+  background-image: url("clientFolders/trilogy-soccer/trilogy-coach-smallest.jpg");
   background-size: cover;
 }
 
@@ -859,16 +867,22 @@ header.scrolling {
   width: 100%;
   height: 60%;
   object-fit: cover;
-  background-image: url("clientFolders/angma/sojuOwnerShot-wide-500px-wide.jpeg");
+  object-position: center;
+  background-image: url("clientFolders/angma/sojuOwner-small.jpeg");
   background-size: cover;
+  background-position: center;
 }
 
 #platinumThumbnail {
   width: 100%;
   height: 60%;
   object-fit: cover;
-  background-image: url("clientFolders/platinum/platinum-detail-shot-small.jpg");
+  background-image: url("clientFolders/platinum/platinum-smallest.jpg");
   background-size: cover;
+}
+
+.thumbnailContainer.loaded img {
+  opacity: 1;
 }
 
 .clientTextBox {
@@ -1358,26 +1372,6 @@ header.scrolling {
 
   .clientName {
     font-size: 2rem;
-  }
-
-  #guanatosThumbnail {
-    background-image: url("clientFolders/guanatos/guanatos-grill-shot.jpg");
-    background-size: cover;
-  }
-
-  #trilogyThumbnail {
-    background-image: url("clientFolders/trilogy-soccer/trilogy-coach-shot.jpg");
-    background-size: cover;
-  }
-
-  #angmaThumbnail {
-    background-image: url("clientFolders/angma/sojuOwnerShot-wide.jpg");
-    background-size: cover;
-  }
-
-  #platinumThumbnail {
-    background-image: url("clientFolders/platinum/platinum-detail-shot.jpg");
-    background-size: cover;
   }
 
   /***  CLIENT PAGE STYLING HERE ***/

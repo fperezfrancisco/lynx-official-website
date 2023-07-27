@@ -1,6 +1,16 @@
-const trilogyThumbnail = document.getElementById("trilogyThumbnail");
+const thumbnailContainers = document.querySelectorAll(".thumbnailContainer");
 
-trilogyThumbnail.addEventListener("mouseover", () => {
-  console.log("entered event listener");
-  trilogyThumbnail.src = "trilogy-vid-gif.gif";
+thumbnailContainers.forEach((div) => {
+  const img = div.querySelector("img");
+  function loaded() {
+    //do something once imgs load
+    div.classList.add("loaded");
+    console.log("entered loaded function");
+  }
+
+  if (img.complete) {
+    loaded();
+  } else {
+    img.addEventListener("load", loaded);
+  }
 });

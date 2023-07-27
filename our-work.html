@@ -132,7 +132,8 @@
       </section>
       <section class="pageSection grid clientWorkSection">
         <div class="clientWorkBox flex" id="angma">
-          <div class="thumbnailContainer flex">
+          <div class="thumbnailContainer flex" id="angmaThumbnail">
+            <!----
             <picture>
               <source
                 media="(max-width: 899px)"
@@ -146,8 +147,9 @@
                 src="clientFolders/angma/sojuOwnerShot-wide.jpg"
                 alt="Angma owner happily helping clients"
                 loading="lazy"
+                class="clientBoxImg"
               />
-            </picture>
+            </picture>-->
           </div>
           <div class="clientTextBox">
             <h3 class="clientName">Angma</h3>
@@ -157,7 +159,10 @@
           </div>
         </div>
         <div class="clientWorkBox flex" id="trilogySoccer">
-          <div class="thumbnailContainer flex">
+          <div class="thumbnailContainer flex" id="trilogyThumbnail">
+            <!--
+
+            --
             <picture>
               <source
                 media="(max-width: 899px)"
@@ -170,12 +175,13 @@
                 srcset="clientFolders/trilogy-soccer/trilogy-coach-shot.jpg"
               />
               <img
-                src="clientFolders/trilogy-soccer/trilogy-coach-shot.jpg"
+                src="clientFolders/trilogy-soccer/trilogy-vid-gif.gif"
                 alt="Coach francisco helping trilogy athlete Cole in his dribbling drill."
                 id="trilogyThumbnail"
                 loading="lazy"
+                class="clientBoxImg"
               />
-            </picture>
+            </picture>-->
           </div>
           <div class="clientTextBox">
             <h3 class="clientName">Trilogy Soccer</h3>
@@ -185,24 +191,7 @@
           </div>
         </div>
         <div class="clientWorkBox flex" id="guanatos">
-          <div class="thumbnailContainer flex">
-            <picture>
-              <source
-                media="(max-width: 899px)"
-                srcset="clientFolders/guanatos/guanatos-grill-shot-small.jpg"
-              />
-              <source
-                media="(min-width: 900px)"
-                srcset="clientFolders/guanatos/guanatos-grill-shot.jpg"
-              />
-              <img
-                src="clientFolders/guanatos/guanatos-grill-shot.jpg"
-                alt="Guanatos employee grilling up some tasty asada."
-                id="guanatosThumbnail"
-                loading="lazy"
-              />
-            </picture>
-          </div>
+          <div class="thumbnailContainer flex" id="guanatosThumbnail"></div>
           <div class="clientTextBox">
             <h3 class="clientName">Guanatos Tacos</h3>
             <a href="guanatos-content-page.html" class="clientLink"
@@ -211,23 +200,7 @@
           </div>
         </div>
         <div class="clientWorkBox flex" id="platinum">
-          <div class="thumbnailContainer flex">
-            <picture>
-              <source
-                media="(max-width: 899px)"
-                srcset="clientFolders/platinum/platinum-detail-shot-small.jpg"
-              />
-              <source
-                media="(min-width: 900px)"
-                srcset="clientFolders/platinum/platinum-detail-shot.jpg"
-              />
-              <img
-                src="clientFolders/platinum/platinum-detail-shot.jpg"
-                alt="platinum auto detail working magic on this beautiful vehicle."
-                loading="lazy"
-              />
-            </picture>
-          </div>
+          <div class="thumbnailContainer flex" id="platinumThumbnail"></div>
           <div class="clientTextBox">
             <h3 class="clientName">Platinum Auto Detailing</h3>
             <a href="platinum-content-page.html" class="clientLink"
@@ -235,13 +208,14 @@
             >
           </div>
         </div>
+        <!----
         <div class="clientWorkBox flex" id="bolt">
           <div class="thumbnailContainer flex"></div>
           <div class="clientTextBox">
             <h3 class="clientName">Bolt Investments</h3>
             <a href="#" class="clientLink"><p class="seeMore">See more</p></a>
           </div>
-        </div>
+        </div>-->
       </section>
 
       <section class="pageSection ctaSection flex">
@@ -290,5 +264,6 @@
     </footer>
     <script src="script/homePage.js"></script>
     <script src="script/index.js"></script>
+    <script src="script/ourWork.js"></script>
   </body>
 </html>

@@ -133,17 +133,12 @@
     <main class="mainSiteContainer grid">
       <section class="pageSection flex clientHero">
         <div class="clientVideoContainer flex">
-          <!--
-            <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/JU2yqznuDSY"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-          -->
+          <video controls class="clientVideoPlayer" autoplay muted>
+            <source
+              src="clientFolders/trilogy-soccer/trilogy-video-main.mp4"
+              type="video/mp4"
+            />
+          </video>
         </div>
         <div class="clientCopyContainer">
           <h1 class="pageTitle">Trilogy Soccer</h1>
@@ -157,8 +152,8 @@
             href="https://instagram.com/trilogysoccer/"
             class="instaLink"
             target="_blank"
-            >Visit our Instagram Page</a
-          >
+            >Visit our Instagram Page <i class="bx bx-link-external"></i
+          ></a>
         </div>
       </section>
       <section class="pageSection content grid">

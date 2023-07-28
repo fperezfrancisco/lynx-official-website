@@ -827,7 +827,7 @@ header.scrolling {
 }
 
 .clientWorkBox {
-  width: 200px;
+  width: 100%;
   aspect-ratio: 1 / 1;
   flex-direction: column;
   align-items: flex-start;
@@ -905,7 +905,7 @@ header.scrolling {
 }
 
 .clientName {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-family: "Bebas Neue", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -925,7 +925,7 @@ header.scrolling {
 .seeMore {
   font-size: 0.65rem;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
   cursor: pointer;
 }
 

@@ -152,29 +152,59 @@
         </div>
       </section>
       <section class="pageSection content grid">
-        <div class="contentBlock flex">
-          <img
-            src="clientFolders/trilogy-soccer/trilogy-imgs/cole-reed-shot.jpg"
-            alt="Trilogy players Reed and Cole in a dribbling drill"
-            class="contentImg"
-            loading="lazy"
-          />
+        <div class="contentBlock flex" id="cole-reed-Img">
+          <picture>
+            <source
+              media="(max-width: 899px)"
+              srcset="
+                clientFolders/trilogy-soccer/trilogy-imgs/cole-reed-shot-medium.jpg
+              "
+            />
+            <source
+              media="(min-width: 900px)"
+              srcset="
+                clientFolders/trilogy-soccer/trilogy-imgs/cole-reed-shot.jpg
+              "
+            />
+            <img
+              src="clientFolders/trilogy-soccer/trilogy-imgs/cole-reed-shot.jpg"
+              alt="Trilogy soccer players in a dribbling drill"
+              loading="lazy"
+              class="contentImg"
+            />
+          </picture>
         </div>
-        <div class="contentBlock flex">
-          <img
-            src="clientFolders/trilogy-soccer/trilogy-imgs/nathan-alonso-dribble.JPG"
-            alt="Alonso and Nathan dribbling and shielding the soccer ball"
-            class="contentImg"
-            loading="lazy"
-          />
+        <div class="contentBlock flex" id="nathan-alonso-img">
+          <picture>
+            <img
+              src="clientFolders/trilogy-soccer/trilogy-imgs/nathan-alonso-dribble.JPG"
+              alt="Alonso and Nathan dribbling and shielding the soccer ball"
+              loading="lazy"
+              class="contentImg"
+            />
+          </picture>
         </div>
-        <div class="contentBlock flex">
-          <img
-            src="clientFolders/trilogy-soccer/trilogy-imgs/cole-solo-img.jpg"
-            alt="Cole running around a yellow pole"
-            class="contentImg"
-            loading="lazy"
-          />
+        <div class="contentBlock flex" id="cole-solo-img">
+          <picture>
+            <source
+              media="(max-width: 899px)"
+              srcset="
+                clientFolders/trilogy-soccer/trilogy-imgs/cole-solo-img-medium.jpg
+              "
+            />
+            <source
+              media="(min-width: 900px)"
+              srcset="
+                clientFolders/trilogy-soccer/trilogy-imgs/cole-solo-img.jpg
+              "
+            />
+            <img
+              src="clientFolders/trilogy-soccer/trilogy-imgs/cole-solo-img.jpg"
+              alt="Cole running around a yellow pole"
+              loading="lazy"
+              class="contentImg"
+            />
+          </picture>
         </div>
       </section>
     </main>
@@ -213,6 +243,7 @@
         </ul>
       </div>
     </footer>
+    <script src="script/clientPages.js"></script>
     <script src="script/index.js"></script>
   </body>
 </html>

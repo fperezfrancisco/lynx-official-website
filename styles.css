@@ -1086,6 +1086,20 @@ header.scrolling {
   background-image: url("clientFolders/angma/angma-imgs/soju-ringup-smallest.jpg");
 }
 
+/* trilogy soccer clients */
+
+#cole-reed-img {
+  background-image: url("clientFolders/trilogy-soccer/trilogy-imgs/cole-reed-smallest.jpg");
+}
+
+#nathan-alonso-img {
+  background-image: url("clientFolders/trilogy-soccer/trilogy-imgs/nathan-alonso-dribble-smallest.JPG");
+}
+
+#cole-solo-img {
+  background-image: url("clientFolders/trilogy-soccer/trilogy-imgs/cole-solo-img-smallest.jpg");
+}
+
 .contentBlock.loaded img {
   opacity: 1;
   height: -webkit-fill-available;

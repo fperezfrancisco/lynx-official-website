@@ -1100,6 +1100,27 @@ header.scrolling {
   background-image: url("clientFolders/trilogy-soccer/trilogy-imgs/cole-solo-img-smallest.jpg");
 }
 
+/* platinum clients */
+
+#second-wash {
+  background-image: url("clientFolders/platinum/platinum-imgs/platinum-second-wash-smallest.jpg");
+}
+
+#premium-wash {
+  background-image: url("clientFolders/platinum/platinum-imgs/platinum-smallest.jpg");
+}
+
+#guanatos-grill {
+  background-image: url("clientFolders/guanatos/guanatos-img/guanatos-smallest.jpg");
+}
+
+#guanatos-ramen-coke {
+  background-image: url("clientFolders/guanatos/guanatos-img/guanatos-ramen-coke-smallest.JPG");
+}
+
+#guanatos-ramen {
+  background-image: url("clientFolders/guanatos/guanatos-img/guanatos-ramen-smallest.JPG");
+}
 .contentBlock.loaded img {
   opacity: 1;
   height: -webkit-fill-available;

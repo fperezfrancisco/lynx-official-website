@@ -154,22 +154,48 @@
         </div>
       </section>
       <section class="pageSection content grid">
-        <div class="contentBlock flex">
-          <img
-            src="clientFolders/platinum/platinum-imgs/platinum-second-wash.jpg"
-            alt="washing a car with the best equipment"
-            class="contentImg"
-            loading="lazy"
-          />
+        <div class="contentBlock flex" id="second-wash">
+          <picture>
+            <source
+              media="(max-width: 899px)"
+              srcset="
+                clientFolders/platinum/platinum-imgs/platinum-second-wash-medium.jpg
+              "
+            />
+            <source
+              media="(min-width: 900px)"
+              srcset="
+                clientFolders/platinum/platinum-imgs/platinum-second-wash.jpg
+              "
+            />
+            <img
+              src="clientFolders/platinum/platinum-imgs/platinum-second-wash.jpg"
+              alt="washing a car with the best equipment"
+              class="contentImg"
+              loading="lazy"
+            />
+          </picture>
         </div>
 
-        <div class="contentBlock flex">
-          <img
-            src="clientFolders/platinum/platinum-imgs/platinum-wash.jpg"
-            alt="Detalining a mercadez benz with ulitmate care and focus."
-            class="contentImg"
-            loading="lazy"
-          />
+        <div class="contentBlock flex" id="premium-wash">
+          <picture>
+            <source
+              media="(max-width: 899px)"
+              srcset="
+                clientFolders/platinum/platinum-imgs/platinum-detal-small-shot.jpg
+              "
+            />
+            <source
+              media="(min-width: 900px)"
+              srcset="clientFolders/platinum/platinum-imgs/platinum-wash.jpg"
+            />
+            <img
+              src="clientFolders/platinum/platinum-imgs/platinum-wash.jpg"
+              alt="Detalining a mercadez benz with ulitmate care and focus."
+              class="contentImg"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </section>
     </main>
@@ -208,7 +234,7 @@
         </ul>
       </div>
     </footer>
-
+    <script src="script/clientPages.js"></script>
     <script src="script/index.js"></script>
   </body>
 </html>

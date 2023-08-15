@@ -1,4 +1,5 @@
 const thumbnailContainers = document.querySelectorAll(".thumbnailContainer");
+//const clientWorkBoxes = document.querySelectorAll(".clientWorkBox");
 
 thumbnailContainers.forEach((div) => {
   const img = div.querySelector("img");

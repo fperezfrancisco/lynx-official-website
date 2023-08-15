@@ -73,6 +73,7 @@ svg {
   --white-400: #ffff;
 }
 
+/* html styling intiallizing font size to 14px for smaller devices */
 html {
   font-size: 14px;
 }
@@ -85,6 +86,7 @@ html {
   display: grid;
 }
 
+/* The styling for fonts and headers */
 .pageTitle {
   font-size: 4.25rem;
   font-family: "Bebas Neue", sans-serif;
@@ -103,6 +105,8 @@ html {
   margin: 0px 0rem 0.5rem;
 }
 
+/* The styling for fonts and headers */
+
 .sectionPara {
   font-size: 1rem;
   line-height: 1.75;
@@ -118,10 +122,20 @@ button {
   font-size: 0.75rem;
 }
 
+/** BODY STYLING HERE **/
+
 body {
   font-family: "Lato", sans-serif;
   width: 100vw;
   overflow-x: hidden;
+}
+
+strong {
+  font: 700;
+}
+
+em {
+  font-style: italic;
 }
 
 .bodyContainer {
@@ -131,6 +145,8 @@ body {
   color: var(--white-400);
   padding-top: 120px;
 }
+
+/** HEADER STYLING STARTS HERE **/
 
 .mainHeader {
   position: fixed;
@@ -154,6 +170,8 @@ header.scrolling {
   background-color: rgba(0, 0, 0, 0.95);
 }
 
+/** LOGO styling **/
+
 .logoContainer {
   height: 100%;
   max-height: 100px;
@@ -174,6 +192,8 @@ header.scrolling {
   height: 60px;
   width: auto;
 }
+
+/** Navigation stling starts here **/
 
 .topNavList {
   display: none;
@@ -230,6 +250,8 @@ header.scrolling {
   letter-spacing: 0px;
 }
 
+/** Navigation contact button styling **/
+
 .contactItem {
   margin-left: 1.5rem;
 }
@@ -263,6 +285,8 @@ header.scrolling {
   color: var(--white-400);
 }
 
+/** Navigation Mobile Styling starts here **/
+
 .mobileMenuOpen {
   display: flex;
   align-items: center;
@@ -288,14 +312,11 @@ header.scrolling {
   height: 100vh;
   flex-direction: column;
   padding: 2rem 1rem 2rem 2.5rem;
-
   background-color: var(--primary-dark-400);
-
   background: rgba(11, 23, 14, 0.17);
   box-shadow: 0 4px 30px rgba(11, 23, 12, 0.1);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
   transition: transform 0.25s ease-in-out;
@@ -323,6 +344,10 @@ header.scrolling {
 .mobileMenuNavList .navItem {
   margin: 0rem;
 }
+
+/** Navigation Mobile Styling ENDS here **/
+/** Navigation stling ends here **/
+/** HEADER stling ends here **/
 
 /* FOOTER STYLING */
 
@@ -405,13 +430,17 @@ header.scrolling {
   font-weight: 300;
 }
 
+/* FOOTER STYLING ENDS HERE */
+
 /***  INDEX PAGE STYLING HERE ***/
+/***  INDEX PAGE STYLING HERE DEVICES SMALLER THAN 375PX ***/
 
 .pageSection {
   width: 100vw;
   overflow-x: hidden;
 }
 
+/***  HERO SECTION SMALLER THAN 375PX ***/
 .heroSection {
   flex-direction: column;
   align-items: center;
@@ -453,11 +482,6 @@ header.scrolling {
   color: var(--secondary-green-900);
 }
 
-/*
-.heroImg {
-  width: 150%;
-}*/
-
 .heroArtContainer {
   min-width: 200px;
   max-width: 375px;
@@ -471,18 +495,8 @@ header.scrolling {
   background-size: cover;
 }
 
-/*
-.heroArtContainer img {
-  opacity: 0;
-  transition: opacity 200ms ease-in-out;
-  height: 100%;
-  width: auto;
-  max-width: 200%;
-}
-
-.heroArtContainer.loaded img {
-  opacity: 1;
-}*/
+/***  HERO SECTION SMALLER THAN 375PX ENDS ***/
+/***  CLIENT SECTION SMALLER THAN 375PX STARTS ***/
 
 .clientsSection {
   flex-direction: column;
@@ -552,6 +566,9 @@ header.scrolling {
   font-weight: 500;
 }
 
+/***  CLIENT SECTION SMALLER THAN 375PX ENDS ***/
+/***  ABOUT & SERVICES SECTION SMALLER THAN 375PX STARTS ***/
+
 .aboutSection,
 .servicesSection {
   margin: 1rem 0rem;
@@ -620,6 +637,9 @@ header.scrolling {
   letter-spacing: 4px;
 }
 
+/***  CLIENT SECTION SMALLER THAN 375PX ENDS ***/
+/***  CTA SECTION SMALLER THAN 375PX STARTS ***/
+
 .ctaSection {
   padding: 4rem;
   flex-direction: column;
@@ -642,7 +662,14 @@ header.scrolling {
   max-height: none;
 }
 
+/***  CLIENT SECTION SMALLER THAN 375PX ENDS ***/
+/***  INDEX PAGE STYLING SMALLER THAN 375PX ENDS ***/
+
+/* ------ */
 /***  SERVICES PAGE STYLING HERE ***/
+/* ------ */
+
+/* SERVICES HERO SECTION STYLING */
 .servicesHero {
   background-image: linear-gradient(transparent, rgba(18, 22, 18, 0.04));
 }
@@ -744,7 +771,11 @@ header.scrolling {
   line-height: 1.5;
 }
 
+/***  SERVICES PAGE STYLING ENDS HERE ***/
+
+/* ------ */
 /***  OUR TEAM PAGE STYLING HERE ***/
+/* ------ */
 
 .teamPageBody .ourWorkHeroArtContainer {
   background-image: none;
@@ -807,7 +838,11 @@ header.scrolling {
   text-transform: uppercase;
 }
 
+/***  OUR TEAM PAGE STYLING ENDS HERE ***/
+
+/* ------ */
 /***  OUR WORK PAGE STYLING HERE ***/
+/* ------ */
 
 .ourWorkCopy {
   width: 100%;
@@ -820,56 +855,54 @@ header.scrolling {
 .clientWorkSection {
   position: relative;
   width: 100%;
-  padding: 2rem 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 1.5rem;
+  max-width: 350px;
+  min-width: 200px;
+  padding: 1rem;
+  margin: auto;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 1rem;
   justify-items: center;
 }
 
 .clientWorkBox {
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  width: 90%;
+  height: auto;
   flex-direction: column;
   align-items: flex-start;
+  cursor: pointer;
 }
 
-/*
 .clientWorkBox:hover {
-  transform: scale(1.125);
+  transform: scale(1.1);
   transition: all 0.5s ease-out;
-}*/
+}
 
 .thumbnailContainer {
   width: 100%;
-  height: 60%;
+  aspect-ratio: 1 / 0.65;
+  max-width: 300px;
+  min-width: 120px;
+  height: auto;
   background-color: var(--tempGray);
-  margin-bottom: 0.75rem;
-  cursor: pointer;
+  margin-bottom: 0.5rem;
   overflow: hidden;
+  object-fit: cover;
+  object-position: center;
 }
 
 .thumbnailContainer img {
-  object-fit: cover;
-
+  max-width: 120%;
   opacity: 0;
   transition: opacity 200ms ease-in-out;
 }
 
 #guanatosThumbnail {
-  width: 100%;
-  height: 60%;
   object-fit: cover;
   background-image: url("clientFolders/guanatos/guanatos-smallest.jpg");
   background-size: cover;
 }
 
-#guanatosThumbnailImg {
-  object-fit: cover;
-  height: 100%;
-}
-
 #trilogyThumbnail {
-  width: 100%;
   object-fit: cover;
   object-position: center;
   background-image: url("clientFolders/trilogy-soccer/trilogy-coach-smallest.jpg");
@@ -877,8 +910,6 @@ header.scrolling {
 }
 
 #angmaThumbnail {
-  width: 100%;
-  height: 60%;
   object-fit: cover;
   object-position: center;
   background-image: url("clientFolders/angma/sojuOwner-small.jpeg");
@@ -887,8 +918,6 @@ header.scrolling {
 }
 
 #platinumThumbnail {
-  width: 100%;
-  height: 60%;
   object-fit: cover;
   background-image: url("clientFolders/platinum/platinum-smallest.jpg");
   background-size: cover;
@@ -905,7 +934,7 @@ header.scrolling {
 }
 
 .clientName {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Bebas Neue", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -913,87 +942,11 @@ header.scrolling {
   line-height: 1.2;
 }
 
-.clientLink {
-  color: inherit;
-  text-decoration: none;
-}
+/***  OUR WORK PAGE STYLING ENDS HERE ***/
 
-.clientLink:visited {
-  color: inherit;
-}
-
-.seeMore {
-  font-size: 0.65rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  cursor: pointer;
-}
-
-.seeMore:hover {
-  text-decoration: underline;
-}
-
-/* pop up section */
-.popUpContainer {
-  display: none;
-  position: absolute;
-  z-index: 20;
-  width: 95%;
-  max-width: 900px;
-  left: 0;
-  right: 0;
-  top: 5%;
-  margin: auto;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--primary-dark-900);
-}
-
-.innerPopUp {
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  padding: 4rem 1rem;
-  row-gap: 1rem;
-  align-items: center;
-}
-
-.innerPopUp .thumbnailContainer {
-  width: 500px;
-  height: 325px;
-}
-
-.innerPopUp .imgSlider {
-  width: 600px;
-  height: 400px;
-  background-color: var(--tempGray);
-}
-
-.controlsBox {
-  margin-top: 1.5rem;
-  column-gap: 24px;
-  color: var(--white-400);
-  font-size: 3rem;
-}
-
-.backBtn {
-  width: 200px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  border: none;
-  background-color: var(--tempGray);
-  color: var(--white-400);
-  box-shadow: none;
-}
-
-.controlsBox i {
-  cursor: pointer;
-}
-/***  CLIENT PAGE STYLING HERE ***/
+/* ------ */
+/***  CLIENT PAGE STYLING HERE FOR SMALLER THAN 375PX ***/
+/* ------ */
 
 .clientHero {
   margin: 3rem 0rem;
@@ -1024,13 +977,37 @@ header.scrolling {
   max-width: 300px;
 }
 
+.clientCopyContainer .sectionPara {
+  margin: 0.35rem 0rem;
+}
+
+.clientCopyContainer .clientSubheading {
+  margin-top: 2rem;
+}
+
+.sectionPara strong {
+  font-weight: 900;
+}
+
+.sectionPara em {
+  font-style: italic;
+}
+
+.industryPara strong,
+.challengePara strong,
+.solutionPara strong {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-right: 4px;
+}
+
 .instaLink {
   font-size: 0.75rem;
   color: var(--white-400);
   opacity: 0.8;
   text-decoration: none;
   letter-spacing: 1px;
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 
 .instaLink:hover {
@@ -1126,9 +1103,11 @@ header.scrolling {
   height: -webkit-fill-available;
 }
 
-/***  CLIENT PAGE STYLING HERE ***/
+/***  CLIENT PAGE STYLING ENDS HERE ***/
 
+/* ------ */
 /***  CONTACT PAGE STYLING HERE ***/
+/* ------ */
 
 .contactSection {
   width: 100%;
@@ -1259,12 +1238,26 @@ header.scrolling {
   color: var(--white-400);
 }
 
+/***  CONTACT PAGE STYLING ENDS HERE ***/
+
+/* ------ */
+/*** DEVICES LESS THAN 375PX ABOVE ***/
+/* ------ */
+/* ------ */
+/*** DEVICES MORE THAN 375PX BELOW ***/
+/* ------ */
+
 @media only screen and (min-width: 375px) {
+  /* ------ */
+  /*** HEADER STYLING 375PX OR MORE ***/
+  /* ------ */
   .mainHeader {
     padding: 1rem;
   }
 
-  /* FOOTER STYLING */
+  /* ------ */
+  /*** FOOTER STYLING 375PX OR MORE ***/
+  /* ------ */
 
   .mainFooter {
     justify-content: center;
@@ -1274,7 +1267,9 @@ header.scrolling {
     width: 240px;
   }
 
-  /***  INDEX PAGE STYLING HERE ***/
+  /* ------ */
+  /*** INDEX STYLING 375PX OR MORE ***/
+  /* ------ */
 
   .heroArtContainer {
     min-width: 375px;
@@ -1322,7 +1317,9 @@ header.scrolling {
     padding: 0rem 4rem;
   }
 
-  /***  SERVICES PAGE STYLING HERE ***/
+  /* ------ */
+  /*** SERVICES PAGE STYLING 375PX OR MORE ***/
+  /* ------ */
   .servicesHero .servicesHeroArtContainer {
     min-width: 375px;
     max-width: 500px;
@@ -1348,7 +1345,9 @@ header.scrolling {
     padding: 4rem 2rem 1rem;
   }
 
-  /***  meet team PAGE STYLING HERE ***/
+  /* ------ */
+  /*** OUR TEAM STYLING 375PX OR MORE ***/
+  /* ------ */
 
   .meetTeamSection {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1360,7 +1359,9 @@ header.scrolling {
     background-image: linear-gradient(rgba(8, 52, 11, 1), rgba(18, 22, 18, 0));
   }
 
-  /***  CONTACT PAGE STYLING HERE ***/
+  /* ------ */
+  /*** CONTACT STYLING 375PX OR MORE ***/
+  /* ------ */
 
   .contactSection {
     padding: 3rem;
@@ -1397,8 +1398,35 @@ header.scrolling {
     margin-bottom: 3rem;
   }
 
-  /* our work */
-  /***  CLIENT PAGE STYLING HERE ***/
+  /* ------ */
+  /*** OUR WORK & CLIENT STYLING 375PX OR MORE ***/
+  /* ------ */
+
+  .clientWorkSection {
+    max-width: 1200px;
+    min-width: 250px;
+    padding: 2rem 1rem;
+    margin: auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1.75rem;
+    justify-items: center;
+  }
+
+  .thumbnailContainer {
+    width: 100%;
+    aspect-ratio: 1 / 0.65;
+    max-width: 400px;
+    min-width: 200px;
+    height: auto;
+    background-color: var(--tempGray);
+    margin-bottom: 0.5rem;
+  }
+
+  .thumbnailContainer img {
+    max-width: 120%;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+  }
 
   .clientVideoContainer {
     width: 350px;
@@ -1412,7 +1440,14 @@ header.scrolling {
   }
 }
 
+/* ------ */
+/*** DEVICES STYLING 600PX OR MORE BELOW ***/
+/* ------ */
+
 @media only screen and (min-width: 600px) {
+  /* ------ */
+  /*** INDEX STYLING 600PX OR MORE ***/
+  /* ------ */
   .heroArtContainer {
     box-shadow: -20px 24px 50px var(--primary-dark-900);
     object-position: center;
@@ -1428,7 +1463,9 @@ header.scrolling {
     padding-bottom: 8rem;
   }
 
-  /***  OUR TEAM PAGE STYLING HERE ***/
+  /* ------ */
+  /*** OUR TEAM STYLING 600PX OR MORE ***/
+  /* ------ */
 
   .meetTeamSection {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
@@ -1443,25 +1480,28 @@ header.scrolling {
     padding: 2rem;
   }
 
-  /***  OUR WORK PAGE STYLING HERE ***/
+  /* ------ */
+  /*** OUR WORK STYLING 600PX OR MORE ***/
+  /* ------ */
 
   .clientWorkSection {
-    width: 100%;
-    padding: 0rem 1rem 2rem;
+    padding: 1rem;
+    margin: auto;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-gap: 1.5rem;
+    grid-gap: 2rem 1rem;
+    justify-items: center;
   }
 
-  .clientWorkBox {
-    width: 400px;
-    aspect-ratio: 1 / 1;
+  .clientWorkBox,
+  .clientTextBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .clientName {
-    font-size: 2rem;
-  }
-
-  /***  CLIENT PAGE STYLING HERE ***/
+  /* ------ */
+  /*** CLIENT STYLING 600PX OR MORE ***/
+  /* ------ */
 
   .clientVideoContainer {
     width: 600px;
@@ -1471,12 +1511,21 @@ header.scrolling {
   }
 }
 
+/* ------ */
+/*** STYLING 768PX OR MORE BELOW ***/
+/* ------ */
+
 @media only screen and (min-width: 768px) {
+  /* ------ */
+  /*** FONT SIZE RESIZING ***/
+  /* ------ */
   html {
     font-size: 16px;
   }
 
-  /* FOOTER STYLING */
+  /* ------ */
+  /*** FOOTER STYLING 768PX OR MORE ***/
+  /* ------ */
 
   .mainFooter {
     padding: 2rem 2.5rem;
@@ -1485,6 +1534,10 @@ header.scrolling {
     justify-content: center;
     column-gap: 3rem;
   }
+
+  /* ------ */
+  /*** INDEX / CTA  STYLING 768PX OR MORE ***/
+  /* ------ */
 
   .ctaSection {
     padding: 6rem 4rem;
@@ -1503,7 +1556,9 @@ header.scrolling {
     max-height: none;
   }
 
-  /* servcies box stling*/
+  /* ------ */
+  /*** SERVICES PAGE STYLING 768PX OR MORE ***/
+  /* ------ */
 
   .servicesPageServicesSection {
     grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
@@ -1520,14 +1575,9 @@ header.scrolling {
     height: 650px;
   }
 
-  /* our team styling */
-
-  /***  CONTACT PAGE STYLING HERE ***/
-  .contactForm {
-    max-width: 600px;
-    min-width: 200px;
-  }
-
+  /* ------ */
+  /*** OUR TEAM STYLING 768PX OR MORE ***/
+  /* ------ */
   .headshotContainer {
     position: absolute;
     top: -50px;
@@ -1555,9 +1605,24 @@ header.scrolling {
     font-size: 2rem;
     text-transform: uppercase;
   }
+
+  /* ------ */
+  /*** CONTACT STYLING 768PX OR MORE ***/
+  /* ------ */
+  .contactForm {
+    max-width: 600px;
+    min-width: 200px;
+  }
 }
 
+/* ------ */
+/*** PAGE STYLING 900PX OR MORE BELOW ***/
+/* ------ */
+
 @media only screen and (min-width: 900px) {
+  /* ------ */
+  /*** HEADER STYLING 900PX OR MORE ***/
+  /* ------ */
   .logoImg {
     height: 82px;
     width: auto;
@@ -1581,7 +1646,9 @@ header.scrolling {
     font-size: 3.5rem;
   }
 
-  /* index styling */
+  /* ------ */
+  /*** INDEX STYLING 900PX OR MORE ***/
+  /* ------ */
   .heroSection {
     flex-direction: row-reverse;
     align-items: flex-start;
@@ -1630,8 +1697,9 @@ header.scrolling {
   #angmaImg {
     height: 120px;
   }
-
-  /** CLIENT PAGE STYLING **/
+  /* ------ */
+  /*** CLIENTS PAGE STYLING 900PX OR MORE ***/
+  /* ------ */
   .clientHero {
     column-gap: 4rem;
     flex-direction: row;
@@ -1651,17 +1719,23 @@ header.scrolling {
     align-items: flex-start;
   }
 
-  /***  SERVICES PAGE STYLING HERE ***/
+  /* ------ */
+  /*** SERVICES PAGE STYLING 900PX OR MORE ***/
+  /* ------ */
   .servicesHero {
     align-items: center;
   }
-  /***  team PAGE STYLING HERE ***/
+  /* ------ */
+  /*** OUR TEAM STYLING 900PX OR MORE ***/
+  /* ------ */
   .teamHero {
     flex-direction: row-reverse;
     align-items: flex-start;
   }
 
-  /*contact section 900px*/
+  /* ------ */
+  /*** CONTACT STYLING 900PX OR MORE ***/
+  /* ------ */
   .contactSection {
     width: 100%;
     padding: 6rem 3rem;
@@ -1687,12 +1761,21 @@ header.scrolling {
   }
 }
 
+/* ------ */
+/*** PAGE STYLING 1200PX OR MORE BELOW ***/
+/* ------ */
+
 @media only screen and (min-width: 1200px) {
+  /* ------ */
+  /*** HEADER STYLING 1200PX OR MORE ***/
+  /* ------ */
   .mainHeader {
     padding: 1rem 4rem;
   }
 
-  /* index styling */
+  /* ------ */
+  /*** INDEX STYLING 1200PX OR MORE ***/
+  /* ------ */
   .aboutSection,
   .servicesSection {
     flex-direction: row;
@@ -1724,11 +1807,16 @@ header.scrolling {
     max-width: 650px;
     text-align: left;
   }
-
-  /***  SERVICES PAGE STYLING HERE ***/
+  /* ------ */
+  /*** SERVICES STYLING 1200PX OR MORE ***/
+  /* ------ */
   .servicesHero {
     align-items: flex-start;
   }
+
+  /* ------ */
+  /*** OUR TEAM STYLING 1200PX OR MORE ***/
+  /* ------ */
 
   .teamHero {
     align-items: center;
@@ -1743,26 +1831,22 @@ header.scrolling {
     padding: 6rem 1rem;
   }
 
+  /* ------ */
+  /*** CONTACT PAGE STYLING 1200PX OR MORE ***/
+  /* ------ */
+
   .contactSection {
     width: 100%;
     padding: 9rem 6rem;
   }
 
-  /***  OUR WORK PAGE STYLING HERE ***/
+  /* ------ */
+  /*** OUR WORK STYLING 1200PX OR MORE ***/
+  /* ------ */
 
-  .clientWorkSection {
-    width: 100%;
-    padding: 2rem 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-    justify-items: center;
-  }
-
-  .clientWorkBox {
-    width: 500px;
-    aspect-ratio: 1 / 1;
-  }
-
-  /***  CLIENT PAGE STYLING HERE ***/
+  /* ------ */
+  /*** CLIENT PAGE STYLING 1200PX OR MORE ***/
+  /* ------ */
 
   .clientVideoContainer {
     width: 600px;
@@ -1775,6 +1859,10 @@ header.scrolling {
     max-width: 600px;
   }
 }
+
+/* ------ */
+/*** PAGE STYLING 1200PX OR MORE ABOVE ***/
+/* ------ */
 
 /* ending classes */
 .hidden {

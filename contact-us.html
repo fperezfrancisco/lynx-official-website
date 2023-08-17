@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -149,19 +149,19 @@
           </ul>
         </div>
         <form class="contactForm grid" id="contactForm">
-          <span class="formItem firstNameSpan flex">
+          <span class="formItem firstNameSpan flex hidden">
             <label for="firstName" class="formLabel">First Name</label>
             <input type="text" name="firstName" id="firstName" required />
           </span>
-          <span class="formItem lastNameSpan flex">
+          <span class="formItem lastNameSpan flex hidden">
             <label for="lastName" class="formLabel">Last Name</label>
             <input type="text" name="lastName" id="lastName" required />
           </span>
-          <span class="formItem emailSpan flex">
+          <span class="formItem emailSpan flex hidden">
             <label for="email" class="formLabel">Email</label>
             <input type="email" name="email" id="email" required />
           </span>
-          <span class="formItem messageSpan flex">
+          <span class="formItem messageSpan flex hidden">
             <label for="message" class="formLabel">Message</label>
             <textarea
               name="message"
@@ -172,7 +172,20 @@
               required
             ></textarea>
           </span>
-          <button class="formSendBtn" id="sendMessageBtn">Send Message</button>
+          <button class="formSendBtn hidden" id="sendMessageBtn">
+            Send Message
+          </button>
+          <div class="thankYouContainer flex hidden">
+            <h2 class="thankYouTitle sectionTitle">
+              Thank You For Your Message!
+            </h2>
+            <i class="bx bxs-check-circle"></i>
+            <p class="sectionPara">
+              Your message will be promptly looked at and responded to soon.
+              Please make sure to check your email for a message from one of our
+              team members.
+            </p>
+          </div>
         </form>
       </section>
     </main>

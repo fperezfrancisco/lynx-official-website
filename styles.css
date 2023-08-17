@@ -1238,6 +1238,31 @@ header.scrolling {
   color: var(--white-400);
 }
 
+/** Thank you message **/
+
+.thankYouContainer {
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  width: 100%;
+  grid-column: 1 / -1;
+}
+
+.thankYouContainer .thankYouTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.thankYouContainer i {
+  color: var(--secondary-green-400);
+  font-size: 5rem;
+}
+
+.thankYouContainer p {
+  padding: 1rem 4rem;
+}
+
 /***  CONTACT PAGE STYLING ENDS HERE ***/
 
 /* ------ */

@@ -1474,9 +1474,54 @@ header.scrolling {
   /* ------ */
   /*** INDEX STYLING 600PX OR MORE ***/
   /* ------ */
+  .anim-fadeFromRight {
+    opacity: 0;
+    transform: translateX(30px);
+    animation: slideIn 0.5s linear forwards;
+  }
+
+  .anim-fadeFromLeft {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: slideIn 0.5s linear forwards;
+  }
+
+  /* animation delays */
+  .heroBtn {
+    animation-delay: 0.5s;
+  }
+
+  .titleSubheading.anim-fadeFromRight {
+    animation-delay: 0.5s;
+  }
+
+  .heroCopyContainer .sectionPara.anim-fadeFromRight {
+    animation-delay: 0.5s;
+  }
+
+  .contactCopyContainer .sectionPara {
+    animation-delay: 0.5s;
+  }
+
+  .contactInfoList {
+    animation-delay: 1s;
+  }
+
+  .contactForm {
+    animation-delay: 1s;
+  }
+
+  @keyframes slideIn {
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
   .heroArtContainer {
     box-shadow: -20px 24px 50px var(--primary-dark-900);
     object-position: center;
+    animation-delay: 1s;
   }
 
   .sectionArtContainer {
@@ -1764,7 +1809,7 @@ header.scrolling {
   /* ------ */
   .contactSection {
     width: 100%;
-    padding: 6rem 3rem;
+    padding: 2rem 3rem;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
     column-gap: 2rem;
   }
@@ -1863,7 +1908,7 @@ header.scrolling {
 
   .contactSection {
     width: 100%;
-    padding: 9rem 6rem;
+    padding: 3rem 6rem;
   }
 
   /* ------ */

@@ -175,6 +175,12 @@
           <button class="formSendBtn hidden" id="sendMessageBtn">
             Send Message
           </button>
+          <div class="messageSending flex hidden">
+            <h2 class="thankYouTitle sectionTitle">
+              Give us a sec, your message is being delivered.
+            </h2>
+            <i class="bx bx-mail-send"></i>
+          </div>
           <div class="thankYouContainer flex hidden">
             <h2 class="thankYouTitle sectionTitle">
               Thank You For Your Message!
@@ -207,9 +213,15 @@
               name="yourEmail"
               id="yourEmail"
               placeholder="YOUR EMAIL"
+              required
             />
             <button class="subscribeBtn filledBtn">Join</button>
           </fieldset>
+          <div class="subscribeThankYou hidden">
+            <p class="sectionPara subMessage">
+              Thank You for Joining our Mailing List!
+            </p>
+          </div>
         </form>
         <ul class="footerList footerInfo flex">
           <li class="footerItem">

@@ -423,6 +423,18 @@ header.scrolling {
   font-size: 0.65rem;
 }
 
+.subscribeThankYou {
+  padding: 0.5rem 0rem 0rem;
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
 .footerList {
   list-style-type: none;
   flex-direction: column;
@@ -1241,7 +1253,8 @@ header.scrolling {
 
 /** Thank you message **/
 
-.thankYouContainer {
+.thankYouContainer,
+.messageSending {
   flex-direction: column;
   align-items: center;
   row-gap: 1rem;
@@ -1249,19 +1262,50 @@ header.scrolling {
   grid-column: 1 / -1;
 }
 
-.thankYouContainer .thankYouTitle {
+.thankYouContainer .thankYouTitle,
+.messageSending .sectionTitle {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 500;
 }
 
-.thankYouContainer i {
+.thankYouContainer .thankYouTitle,
+.thankYouContainer i,
+.thankYouContainer p {
+  opacity: 0;
+  animation: thankYouFade 1.5s ease-in forwards;
+}
+
+.thankYouContainer i,
+.messageSending i {
   color: var(--secondary-green-400);
   font-size: 5rem;
 }
 
+.messageSending i {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: messageAnim 1s ease-out infinite;
+}
+
 .thankYouContainer p {
   padding: 1rem 4rem;
+}
+
+@keyframes messageAnim {
+  50% {
+    opacity: 1;
+    transform: translateX(-15px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes thankYouFade {
+  100% {
+    opacity: 1;
+  }
 }
 
 /***  CONTACT PAGE STYLING ENDS HERE ***/

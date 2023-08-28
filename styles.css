@@ -67,8 +67,9 @@ svg {
   --primary-dark-400: #121612;
   --primary-dark-900: rgba(0, 0, 0, 1);
   --secondary-green-400: rgb(100, 244, 112);
-  --secondary-green-faded: rgba(100, 244, 112, 0.68);
-  --secondary-green-900: rgba(8, 52, 11, 1);
+  --secondary-green-faded: rgba(74, 185, 83, 0.783);
+  --secondary-green-700: rgb(8, 46, 10);
+  --secondary-green-900: rgb(5, 31, 7);
   --tempGray: rgba(61, 61, 61, 1);
   --white-400: #ffff;
 }
@@ -282,7 +283,7 @@ header.scrolling {
 }
 
 .contactBtn:hover {
-  background-color: var(--secondary-green-faded);
+  background-color: var(--secondary-green-700);
   color: var(--white-400);
 }
 
@@ -417,7 +418,7 @@ header.scrolling {
   height: 42px;
   margin-left: -32px;
   border-radius: 0px 4px 4px 0px;
-  background-color: #45a54d;
+  background-color: rgb(49, 122, 55);
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 0.65rem;
@@ -491,8 +492,8 @@ header.scrolling {
 }
 
 .heroBtn:hover {
-  background-color: var(--white-400);
-  color: var(--secondary-green-900);
+  background-color: var(--secondary-green-700);
+  /*color: var(--secondary-green-900);*/
 }
 
 .heroArtContainer {
@@ -504,6 +505,7 @@ header.scrolling {
   object-fit: cover;
   object-position: center;
   background-image: url("bkgHeroImgs/sojuOwnerShot-wide-500px-wide.jpeg");
+  background-image: url("bkgHeroImgs/sojuOwnerShot-wide-500px-wide-new.webp");
   background-position: center;
   background-size: cover;
 }
@@ -633,7 +635,7 @@ header.scrolling {
 
 .aboutBtn:hover,
 .learnMoreBtn:hover {
-  background-color: var(--secondary-green-faded);
+  background-color: var(--secondary-green-700);
   color: var(--white-400);
 }
 
@@ -1247,7 +1249,7 @@ header.scrolling {
 }
 
 .formSendBtn:hover {
-  background-color: var(--secondary-green-faded);
+  background-color: var(--secondary-green-700);
   color: var(--white-400);
 }
 
@@ -1346,6 +1348,7 @@ header.scrolling {
     max-width: 600px;
     height: 375px;
     background-image: url("bkgHeroImgs/sojuOwnerShot-wide.jpg");
+    background-image: url("bkgHeroImgs/sojuOwnerShot-wide-new.webp");
     background-position: center;
     background-size: cover;
   }

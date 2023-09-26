@@ -535,33 +535,79 @@ header.scrolling {
 }
 
 .logosBox {
-  margin: 1rem 0rem;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  margin: 4rem 0rem;
   flex-direction: column;
   align-items: center;
-  row-gap: 0rem;
-}
-
-.topRow,
-.bottomRow {
-  flex-direction: column;
-  align-items: center;
-  row-gap: 0rem;
+  grid-gap: 3rem;
+  width: 100%;
+  max-width: 600px;
 }
 
 .clientLogoContainer {
+  opacity: 0;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: auto;
+  padding: auto;
+  align-items: center;
   overflow: hidden;
   justify-content: center;
 }
 
 .clientLogoImg {
   height: 100%;
-  max-height: 250px;
-  max-width: 200%;
+  max-height: 130px;
 }
 
-#angmaImg {
-  height: 80%;
+.clientLogoContainer:nth-child(2) {
+  animation-delay: 0.25s;
 }
+
+.clientLogoContainer:nth-child(3) {
+  animation-delay: 0.35s;
+}
+
+.clientLogoContainer:nth-child(4) {
+  animation-delay: 0.45s;
+}
+
+.clientLogoContainer:nth-child(5) {
+  animation-delay: 0.55s;
+}
+
+.clientLogoContainer:nth-child(6) {
+  animation-delay: 0.65s;
+}
+
+.reveal {
+  transform: translateY(100px);
+  opacity: 0;
+  animation: revealUp 0.45s ease-out forwards;
+}
+
+@keyframes revealUp {
+  60% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/*
+#angmaImg {
+  max-height: 120px;
+}
+
+#guanatosImg {
+  max-height: 120px;
+}
+
+#trilogyImg {
+  max-height: 120px;
+}*/
 
 .reviewBox {
   max-width: 650px;
@@ -1830,22 +1876,6 @@ header.scrolling {
     row-gap: 1.5rem;
   }
 
-  .topRow,
-  .bottomRow {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .clientLogoContainer {
-    width: 300px;
-    overflow: hidden;
-    justify-content: center;
-    align-self: flex-end;
-  }
-
-  #angmaImg {
-    height: 180px;
-  }
   /* ------ */
   /*** CLIENTS PAGE STYLING 900PX OR MORE ***/
   /* ------ */

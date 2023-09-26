@@ -1,17 +1,17 @@
 const heroArtContainer = document.querySelector(".heroArtContainer ");
 
-//lazy loading function for hero art
+const logosBox = document.querySelector(".logosBox");
+const logoIcons = document.querySelectorAll(".clientLogoContainer");
+logoIcons.forEach((logo) => {
+  logo.classList.remove("reveal");
+});
 
-/*
-const heroImg = heroArtContainer.querySelector("img");
-function loaded() {
-  //do something once imgs load
-  heroArtContainer.classList.add("loaded");
-  console.log("entered loaded function");
-}
-
-if (heroImg.complete) {
-  loaded();
-} else {
-  heroImg.addEventListener("load", loaded);
-}*/
+document.addEventListener("scroll", () => {
+  console.log(scrollY);
+  //animate the logos based on y-
+  if (window.scrollY > 500) {
+    logoIcons.forEach((logo) => {
+      logo.classList.add("reveal");
+    });
+  }
+});

@@ -284,6 +284,7 @@ header.scrolling {
 
 .contactBtn:hover {
   background-color: var(--secondary-green-700);
+  background-color: var(--primary-dark-900);
   color: var(--white-400);
 }
 
@@ -403,7 +404,8 @@ header.scrolling {
 .subscribeForm input {
   box-shadow: none;
   height: 100%;
-  padding: 8px;
+  min-height: 48px;
+  padding: 0.65rem;
   border: 1px solid var(--secondary-green-400);
   width: 160px;
   font-size: 0.75rem;
@@ -414,14 +416,19 @@ header.scrolling {
 .subscribeBtn {
   box-shadow: none;
   border: none;
-  width: 64px;
-  height: 42px;
+  width: 72px;
+  height: 54px;
   margin-left: -32px;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0px 8px 8px 0px;
   background-color: rgb(49, 122, 55);
   text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 0.65rem;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+}
+
+.subscribeBtn:hover,
+.subscribeBtn:focus {
+  background-color: var(--primary-dark-900);
 }
 
 .subscribeThankYou {
@@ -493,6 +500,7 @@ header.scrolling {
 
 .heroBtn:hover {
   background-color: var(--secondary-green-700);
+  background-color: var(--primary-dark-900);
   /*color: var(--secondary-green-900);*/
 }
 
@@ -635,7 +643,7 @@ header.scrolling {
 
 .aboutBtn:hover,
 .learnMoreBtn:hover {
-  background-color: var(--secondary-green-700);
+  background-color: var(--primary-dark-900);
   color: var(--white-400);
 }
 

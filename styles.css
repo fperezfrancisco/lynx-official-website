@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   font: inherit;
+  font-display: swap;
   /*border: 1px solid lightgreen;*/
 }
 
@@ -92,7 +93,7 @@ html {
 /* The styling for fonts and headers */
 .pageTitle {
   font-size: 4.25rem;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue", cursive, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   line-height: 1.25;
@@ -101,7 +102,7 @@ html {
 
 .sectionTitle {
   font-size: 3rem;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue", cursive, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   line-height: 1.25;

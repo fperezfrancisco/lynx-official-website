@@ -11,13 +11,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="preload"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
     <!-- BOX ICONS LINK -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- no script -->
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
     <title>Lynx Digital Media</title>
   </head>
   <body class="bodyContainer landingPageBody">
@@ -145,7 +159,8 @@
             width="600"
             height="400"
           >
-            <source src="lynx-website-vid.mp4" type="video/mp4" />
+            <source src="videos/lynx-website-video.webm" type="video/webm" />
+            <source src="videos/lynx-website-vid.mp4" type="video/mp4" />
           </video>
           <!----
           <picture>

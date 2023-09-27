@@ -483,7 +483,7 @@ header.scrolling {
 .heroCopyContainer {
   flex-direction: column;
   align-items: center;
-  padding: 2rem 2.5rem 4rem;
+  padding: 2rem 2rem 4rem;
   row-gap: 1.5rem;
   text-align: center;
 }
@@ -533,7 +533,7 @@ header.scrolling {
 .clientsSection {
   flex-direction: column;
   align-items: center;
-  padding: 4rem 1rem 4rem;
+  padding: 4rem 2rem 4rem;
   row-gap: 1.5rem;
   /*background blend*/
   background-color: transparent;
@@ -629,7 +629,7 @@ header.scrolling {
 
 .quote {
   font-size: 1rem;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   line-height: 1.5;
   text-align: center;
 }
@@ -680,7 +680,7 @@ header.scrolling {
   align-items: center;
   justify-content: center;
   row-gap: 1.5rem;
-  padding: 1rem 3rem;
+  padding: 2rem;
   max-width: 600px;
   text-align: center;
 }
@@ -719,7 +719,7 @@ header.scrolling {
 /***  CTA SECTION SMALLER THAN 375PX STARTS ***/
 
 .ctaSection {
-  padding: 4rem;
+  padding: 4rem 2rem;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -843,6 +843,7 @@ header.scrolling {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  list-style-type: square;
   padding: 0.5rem 0rem 0.5rem 1rem;
   font-size: 0.75rem;
   margin-bottom: 1rem;

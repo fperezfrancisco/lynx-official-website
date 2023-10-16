@@ -179,7 +179,7 @@ header.scrolling {
 /** LOGO styling **/
 
 .logoContainer {
-  height: 80%;
+  height: 100%;
   max-height: 100px;
   min-height: none;
   width: auto;
@@ -195,7 +195,7 @@ header.scrolling {
 }
 
 .logoImg {
-  height: 50px;
+  height: 80px;
   width: auto;
 }
 
@@ -1825,10 +1825,6 @@ header.scrolling {
   /* ------ */
   /*** HEADER STYLING 900PX OR MORE ***/
   /* ------ */
-  .logoImg {
-    height: 60px;
-    width: auto;
-  }
 
   .topNavList {
     display: flex;
@@ -1956,7 +1952,7 @@ header.scrolling {
   /*** HEADER STYLING 1200PX OR MORE ***/
   /* ------ */
   .mainHeader {
-    padding: 1rem 4rem;
+    padding: 0.75rem 4rem;
   }
 
   /* ------ */

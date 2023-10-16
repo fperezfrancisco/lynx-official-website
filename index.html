@@ -9,23 +9,24 @@
     <!-- FONTS LINKS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- optionally increase loading priority -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
       rel="preload"
       as="style"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
     />
     <link
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
     />
     <!-- BOX ICONS LINK -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <!-- no script -->
+    <!-- no-JS fallback -->
     <noscript>
       <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
@@ -39,12 +40,16 @@
       <nav class="mainNavBar flex">
         <span class="logoContainer">
           <a href="#" class="logoLink">
-            <img
-              src="images/lynx-logo-copy.png"
-              class="logoImg"
-              alt="Lynx Logo"
-              title="Lynx Home"
-            />
+            <picture>
+              <source srcset="images/lynxLogo/lynx-logo.webp" />
+              <source srcset="images/lynxLogo/lynx-logo.png" />
+              <img
+                src="images/lynxLogo/lynx-logo.webp"
+                class="logoImg"
+                alt="Lynx Logo"
+                title="Lynx Home"
+              />
+            </picture>
           </a>
         </span>
         <ul class="navList flex topNavList">
@@ -329,12 +334,16 @@
     </main>
     <footer class="mainFooter">
       <div class="logoContainerFooter flex">
-        <img
-          src="images/lynx-logo-copy.png"
-          alt="Lynx Digital Logo"
-          title="Lynx Home"
-          class="logoImgFooter"
-        />
+        <picture>
+          <source srcset="images/lynxLogo/lynx-logo.webp" />
+          <source srcset="images/lynxLogo/lynx-logo.png" />
+          <img
+            src="images/lynxLogo/lynx-logo.webp"
+            class="logoImgFooter"
+            alt="Lynx Logo"
+            title="Lynx Home"
+          />
+        </picture>
       </div>
       <div class="footerCopy flex">
         <form class="subscribeForm flex">

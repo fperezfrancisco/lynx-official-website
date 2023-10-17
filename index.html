@@ -152,6 +152,7 @@
             muted
             width="600"
             height="400"
+            poster="images/lynx-video-cover.webp"
             poster="images/lynx-video-cover.png"
           >
             <source src="videos/lynx-website-video.webm" type="video/webm" />
@@ -281,12 +282,30 @@
           </button>
         </div>
         <div class="aboutArtContainer sectionArtContainer flex">
-          <img
-            src="images/lynx-about-us-stock.png"
-            alt=""
-            class="sectionImg"
-            loading="lazy"
-          />
+          <picture>
+            <source
+              media="(max-width: 599px)"
+              srcset="images/lynx-about-stock.webp"
+            />
+            <source
+              media="(max-width: 599px)"
+              srcset="images/lynx-about-stock.png"
+            />
+            <source
+              media="(min-width: 600px)"
+              srcset="images/lynx-about-stock-large.webp"
+            />
+            <source
+              media="(max-width: 599px)"
+              srcset="images/lynx-about-stock-large.png"
+            />
+            <img
+              src="images/lynx-about-stock-large.webp"
+              alt="Allan and Kayla going over client business analytics"
+              class="sectionImg"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </section>
       <div class="about-servicesContainer">
@@ -310,12 +329,30 @@
             </button>
           </div>
           <div class="aboutArtContainer sectionArtContainer flex">
-            <img
-              src="images/lynx-analytics-close-up.png"
-              alt=""
-              class="sectionImg"
-              loading="lazy"
-            />
+            <picture>
+              <source
+                media="(max-width: 599px)"
+                srcset="images/lynx-services-analytics-small.webp"
+              />
+              <source
+                media="(max-width: 599px)"
+                srcset="images/lynx-services-analytics-small.png"
+              />
+              <source
+                media="(min-width: 600px)"
+                srcset="images/lynx-services-analytics.webp"
+              />
+              <source
+                media="(max-width: 599px)"
+                srcset="images/lynx-services-analytics.png"
+              />
+              <img
+                src="images/lynx-services-analytics.webp"
+                alt=""
+                class="sectionImg"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </section>
         <section class="pageSection ctaSection flex">

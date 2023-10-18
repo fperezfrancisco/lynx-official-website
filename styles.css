@@ -868,6 +868,18 @@ header.scrolling {
 /***  OUR TEAM PAGE STYLING HERE ***/
 /* ------ */
 
+.teamHero {
+  height: auto;
+  max-height: none;
+  margin: 0rem;
+  padding: 5rem 2rem;
+}
+
+.teamArtGrid {
+  grid-template-columns: 1fr;
+  grid-gap: 0.5rem;
+}
+
 .teamPageBody .ourWorkHeroArtContainer {
   background-image: none;
   width: fit-content;
@@ -1493,7 +1505,7 @@ header.scrolling {
     justify-items: center;
     column-gap: 2rem;
     row-gap: 10rem;
-    padding: 10rem 0rem;
+    padding: 10rem 2rem;
     background-image: linear-gradient(rgba(8, 52, 11, 1), rgba(18, 22, 18, 0));
   }
 
@@ -1825,6 +1837,22 @@ header.scrolling {
   /* ------ */
   /*** OUR TEAM STYLING 768PX OR MORE ***/
   /* ------ */
+  .teamHero {
+    height: 100%;
+    max-height: none;
+    padding: 5rem 2rem 8rem;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    column-gap: 1rem;
+    justify-items: center;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .teamHeroCopy {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
   .headshotContainer {
     position: absolute;
     top: -50px;
@@ -1951,7 +1979,18 @@ header.scrolling {
     flex-direction: row-reverse;
     align-items: flex-start;
     height: 100%;
-    margin-bottom: 8rem;
+    max-height: none;
+    padding: 5rem 2rem 8rem;
+    grid-template-columns: minmax(500px, 1fr) minmax(350px, 1fr);
+    column-gap: 1rem;
+    justify-items: center;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .teamArtGrid {
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
   }
 
   /* ------ */
@@ -2038,10 +2077,6 @@ header.scrolling {
   /* ------ */
   /*** OUR TEAM STYLING 1200PX OR MORE ***/
   /* ------ */
-
-  .teamHero {
-    align-items: center;
-  }
 
   .meetTeamSection {
     grid-template-columns: repeat(2, minmax(500px, 1fr));

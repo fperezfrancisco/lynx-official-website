@@ -9,7 +9,15 @@
     <!-- FONTS LINKS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- optionally increase loading priority -->
     <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+    />
+    <link
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
@@ -18,9 +26,19 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
+    <!-- no-JS fallback -->
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <meta
+      name="description"
+      content="Elevate your brand with Lynx Digital Marketing, your partner in social media management, content creation, and media marketing. Our expert team specializes in crafting quality content, implementing strategic campaigns, and even offers a media marketing masterclass. Explore our services, discover our approach, and get started on your path to online success. Contact us now!"
+    />
     <!-- TITLE AND META DATA -->
-    <title>Contact Us At Lynx Digital Media</title>
+    <title>Lynx Digital Media | Trilogy Profile</title>
   </head>
   <body class="bodyContainer clientPageBody">
     <header class="mainHeader landingPageHeader flex">
@@ -133,6 +151,10 @@
       <section class="pageSection flex clientHero">
         <div class="clientVideoContainer flex">
           <video controls class="clientVideoPlayer" autoplay muted>
+            <source
+              src="clientFolders/trilogy-soccer/trilogy-video-main.mp4"
+              type="video/mp4"
+            />
             <source
               src="clientFolders/trilogy-soccer/trilogy-video-main.mp4"
               type="video/mp4"

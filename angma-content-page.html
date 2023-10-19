@@ -295,12 +295,16 @@
     </main>
     <footer class="mainFooter">
       <div class="logoContainerFooter flex">
-        <img
-          src="images/lynx-logo-copy.png"
-          alt="Lynx Digital Logo"
-          title="Lynx Home"
-          class="logoImgFooter"
-        />
+        <picture>
+          <source srcset="images/lynxLogo/lynx-logo.webp" />
+          <source srcset="images/lynxLogo/lynx-logo.png" />
+          <img
+            src="images/lynxLogo/lynx-logo.webp"
+            class="logoImgFooter"
+            alt="Lynx Logo"
+            title="Lynx Home"
+          />
+        </picture>
       </div>
       <div class="footerCopy flex">
         <form class="subscribeForm flex">

@@ -158,8 +158,18 @@
           class="heroArtContainer servicesHeroArtContainer flex anim-fadeFromLeft"
         >
           <picture>
-            <source srcset="images/lynx-analytics-allan.webp" />
-            <source srcset="images/lynx-analytics-allan.png" />
+            <source
+              media="(max-width: 599px)"
+              srcset="images/lynx-analytics-allan-small-min.png"
+            />
+            <source
+              media="(min-width: 600px)"
+              srcset="images/lynx-analytics-allan.webp"
+            />
+            <source
+              media="(min-width: 600px)"
+              srcset="images/lynx-analytics-allan.png"
+            />
             <img
               class="sectionImg servicesHeroImg"
               src="images/lynx-analytics-allan.webp"

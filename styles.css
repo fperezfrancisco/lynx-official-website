@@ -693,7 +693,6 @@ header.scrolling {
   min-width: 200px;
   max-width: 375px;
   width: 100%;
-  height: 200px;
   overflow: hidden;
   object-fit: cover;
   object-position: center;
